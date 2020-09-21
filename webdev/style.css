@@ -302,3 +302,18 @@ margin: 0px 0px;
   left: 924px;
   top: 120px;
 }
+<section id="our_community">
+</section>
+
+<section id="implement">
+  <img src="assets/content-image-2.jpg" alt="content-image" id="content-image-2">
+  <div id="content-block-2">
+    <h3>Implement right Code</h3>
+    <p>
+      These might be considered part of the <strong>programming process</strong>, but often the term software development is used for this larger process with the term programming, implementation 
+    </p>
+    <form>
+      <input type="submit" name="btn-learn" id="btn-learn" value="Learn more">
+    </form>
+  </div>
+</section>
