@@ -302,18 +302,114 @@ margin: 0px 0px;
   left: 924px;
   top: 120px;
 }
-<section id="our_community">
-</section>
+#our_community{
+  position: absolute;
+width: 1600px;
+height: 504px;
+top: 1586px;
+background: #F5F6F7;
+}
 
-<section id="implement">
-  <img src="assets/content-image-2.jpg" alt="content-image" id="content-image-2">
-  <div id="content-block-2">
-    <h3>Implement right Code</h3>
-    <p>
-      These might be considered part of the <strong>programming process</strong>, but often the term software development is used for this larger process with the term programming, implementation 
-    </p>
-    <form>
-      <input type="submit" name="btn-learn" id="btn-learn" value="Learn more">
-    </form>
-  </div>
-</section>
+#implement{
+  position: absolute;
+width: 1600px;
+height: 842px;
+top: 2090px;
+background: #FFFFFF;
+}
+#content-image-2{
+  position: absolute;
+  width: 407px;
+  height: 582px;
+  left: 269px;
+  top: 120px;
+}
+#content-block-2{
+  position: absolute;
+  width: 407px;
+  height: 184px;
+  left: 815px;
+  top: 319px;
+}
+
+#implement h3{
+  position: absolute;
+  width: 298px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+
+  
+  /* h2-24-bold */
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  color: #373737;    
+}
+#implement p{
+position: absolute;
+width: 407px;
+height: 60px;
+left: 0px;
+top: 48px;
+
+/* body-14-reg */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+
+color: #4E4E4E;
+
+}
+
+#btn-learn{
+  display: flex;
+flex-direction: row;
+padding: 15px 47px;
+
+position: absolute;
+width: 180px;
+height: 46px;
+left: 0px;
+top: 138px;
+
+background: #00AFDB;
+  
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+border: none;
+
+color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 0px 0px;
+}
+#btn-learn:hover{
+  background: #009CC2;
+  cursor: pointer;
+}
