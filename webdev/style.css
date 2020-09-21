@@ -291,7 +291,7 @@ order: 0;
 align-self: center;
 margin: 0px 0px;
 }
-#btn-main:rappresent{
+#btn-rappresent:hover{
   background: #009CC2;
   cursor: pointer;
 }
