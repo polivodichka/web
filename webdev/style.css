@@ -413,3 +413,73 @@ margin: 0px 0px;
   background: #009CC2;
   cursor: pointer;
 }
+
+#sign_up{
+  position: absolute;
+width: 1600px;
+height: 524px;
+top: 2932px;
+background-image: url(assets/pexels-christina-morillo-1181675\ 1.jpg);
+}
+#email_form{
+  position: absolute;
+  width: 406px;
+  height: 104px;
+  left: 597px;
+  top: 200px;
+}
+#subscribe{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+#form_field{
+  position: absolute;
+width: 406px;
+height: 46px;
+left: 0px;
+top: 58px;
+}
+#email_form input{
+  position: absolute;
+  width: 340px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+/* line-height: 140%; */
+
+display: flex;
+align-items: flex-end;
+
+color: #373737;
+}
+#submit_btn{
+  position: absolute;
+left: 340px;
+
+width: 66px;
+height: 52px;
+
+  background-image: url(assets/btn-submit.svg);
+  border: none;
+}
+#submit_btn:hover{
+  background-image: url(assets/btn-submit_hover.svg);
+  cursor: pointer;
+}
+
+
