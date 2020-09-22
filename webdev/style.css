@@ -38,10 +38,10 @@ display: flex;
 align-items: center;
 }
 #active-mnu-item:hover{
-  font-size: larger;
+  font-weight: lighter;
 }
 a:hover{
-  font-size: larger;
+  font-weight: lighter;
 }
 #syllabus{
 position: absolute;
@@ -481,3 +481,140 @@ height: 52px;
   background-image: url(assets/btn-submit_hover.svg);
   cursor: pointer;
 }
+
+#download{
+position: absolute;
+width: 1600px;
+height: 464px;
+top: 3456px;
+}
+#download h3{
+  position: absolute;
+width: 250px;
+height: 28px;
+left: 675px;
+top: 120px;
+
+/* h2-24-bold */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #373737;
+}
+#download p{
+  position: absolute;
+width: 480px;
+height: 40px;
+left: 560px;
+top: 168px;
+
+/* body-14-reg */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #4E4E4E;
+}
+
+.download_btn{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  background-color: #00AFDB;
+  border: none;
+
+  width: 186px;
+  height: 46px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.download_btn:hover{
+  cursor: pointer;
+  background-color: #009CC2;
+}
+#apple{
+  left: 599px;
+  top: 238px;
+}
+#android{
+  left: 815px;
+  top: 238px;
+}
+
+#footer{
+  position: absolute;
+  width: 1600px;
+  height: 185px;
+  top: 3902px;
+
+  background: #000000;
+}
+#footer nav{
+  position: absolute;
+  height: 20px;
+  left: 160px;
+  top: 73px;
+  bottom: 92px;
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.footer_a{  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#credits{
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+}
+#privacy{
+  position: absolute;
+  height: 20px;
+  left: 85px;
+  top: 0px;
+}
+#teams{
+  position: absolute;
+  height: 20px;
+  left: 171px;
+  top: 0px;
+  width: 300px;
+}
+
