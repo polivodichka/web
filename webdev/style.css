@@ -448,7 +448,7 @@ color: #FFFFFF;
 width: 406px;
 height: 40px;
 left: 0px;
-top: 80px;
+top: 79px;
 }
 #email_form input{
   position: absolute;
@@ -488,13 +488,14 @@ position: absolute;
 width: 1600px;
 height: 464px;
 top: 3456px;
+background-color: #F5F6F7;
 }
 #download h3{
   position: absolute;
 width: 250px;
 height: 28px;
 left: 675px;
-top: 120px;
+top: 98px;
 
 /* h2-24-bold */
 
@@ -516,7 +517,7 @@ color: #373737;
 width: 480px;
 height: 40px;
 left: 560px;
-top: 168px;
+top: 155px;
 
 /* body-14-reg */
 
@@ -572,7 +573,7 @@ color: #4E4E4E;
   position: absolute;
   width: 1600px;
   height: 185px;
-  top: 3902px;
+  top: 3920px;
 
   background: #000000;
 }
@@ -617,5 +618,18 @@ color: #4E4E4E;
   left: 171px;
   top: 0px;
   width: 300px;
+}
+#author{
+  position: absolute;
+  left: 1270px;
+  top: 60px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  
+  color: #818181;
 }
 
