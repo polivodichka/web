@@ -117,14 +117,13 @@ opacity: 0.8;
 width: 504px;
 height: 50px;
 left: calc(50% - 504px/2);
-top: calc(50% - 50px/2 - 22px);
+top: 308px;
 
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 140%;
-/* or 25px */
 
 text-align: center;
 
@@ -213,11 +212,11 @@ top: 0%;
   width: 407px;
   height: 233px;
   left: 269px;
-  top: 295px;
+  top: 270px;
 }
 
 #content-block h3{
-  width: 367px;
+  width: 370px;
   height: 57px;
   left: 0px;
   top: 0px;
@@ -241,7 +240,8 @@ top: 0%;
 width: 407px;
 height: 80px;
 left: 0px;
-top: 77px;
+top: 78px;
+padding-top: 10px;
 
 /* body-14-reg */
 
@@ -249,7 +249,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 140%;
+line-height: 150%;
 /* or 20px */
 
 
@@ -266,7 +266,7 @@ position: absolute;
 width: 184px;
 height: 46px;
 left: 0px;
-top: 187px;
+top: 212px;
 
 background: #00AFDB;
   
@@ -329,7 +329,7 @@ background: #FFFFFF;
   width: 407px;
   height: 184px;
   left: 815px;
-  top: 319px;
+  top: 295px;
 }
 
 #implement h3{
@@ -359,7 +359,7 @@ position: absolute;
 width: 407px;
 height: 60px;
 left: 0px;
-top: 48px;
+top: 58px;
 
 /* body-14-reg */
 
@@ -367,7 +367,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 140%;
+line-height: 150%;
 /* or 20px */
 
 
@@ -384,7 +384,7 @@ position: absolute;
 width: 180px;
 height: 46px;
 left: 0px;
-top: 138px;
+top: 163px;
 
 background: #00AFDB;
   
@@ -426,7 +426,8 @@ background-image: url(assets/pexels-christina-morillo-1181675\ 1.jpg);
   width: 406px;
   height: 104px;
   left: 597px;
-  top: 200px;
+  top: 163px;
+  padding: 15px
 }
 #subscribe{
   font-family: Roboto;
@@ -445,9 +446,9 @@ color: #FFFFFF;
 #form_field{
   position: absolute;
 width: 406px;
-height: 46px;
+height: 40px;
 left: 0px;
-top: 58px;
+top: 80px;
 }
 #email_form input{
   position: absolute;
@@ -472,7 +473,7 @@ color: #373737;
 left: 340px;
 
 width: 66px;
-height: 52px;
+height: 46px;
 
   background-image: url(assets/btn-submit.svg);
   border: none;
