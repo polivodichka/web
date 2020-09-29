@@ -1,0 +1,59 @@
+@font-face{
+  font-family: "MainFont";
+  src: url(Assets/17995.OTF),
+  url(Assets/17993.OTF);
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: "MainFont";
+  font-weight: normal;
+}
+body{
+  background-image: url(Assets/44928-mist-cloud-autumn-shrubland-cloud_forest-3840x2160.jpg);
+  background-size: cover;
+}
+.calculator{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto)  repeat(5, 100px);
+}
+.calculator > button{
+  cursor: pointer;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 2px;
+}
+.calculator > button:hover{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20%; 
+}
+.calculator > button:active{
+  background-color:  rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 20%; 
+}
+#output{
+  grid-column: span 4;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 2px;
+}
+#output #previous-operand{
+  color:  rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+}
+#output #current-operand{
+  color: white;
+  font-size: 2.5rem;
+}
