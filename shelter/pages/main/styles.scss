@@ -1,0 +1,137 @@
+$color-primary-color: #F1CDB3;
+$color-primary-light: #FDDCC4;
+
+$color-light-s: #FAFAFA;
+$color-light-l: #F6F6F6;
+$color-light-xl: #FFFFFF;
+
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+
+:root{
+  font-size: 16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: black;
+}
+.wrapper{
+  display: flex;
+  margin: 0 auto; /*центровка*/
+  max-width: 75rem; /*максимальная ширина, мы ограничили наш контент*/
+  justify-content: space-between;
+}
+
+.header{
+  width: 100vw; /*будет расширятся на всю страницу*/
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__title{
+  color: $color-primary-color;
+  font-family: Georgia;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  line-height: 110%;
+}
+
+.logo__subtitle{
+  color: $color-light-xl;
+  font-family: Arial;
+  font-size: 0.81rem;
+  letter-spacing: 0.1em;
+  line-height: 110%;
+}
+
+.menu{
+  display: flex;
+  width: 443px;
+  
+}
+
+.list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+}
+.list__item{
+  display: flex;
+  align-items: center;
+}
+.list__link{
+  color: $color-light-xl;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9375rem;
+  line-height: 160%;
+}
+.list__link_disabled{
+  color: $color-dark-s;
+}
+.list__link_active{
+  border-bottom: 3px solid $color-primary-color;
+}
+
+main{  
+  background: url(/assets/images/noise_transparent.png),  
+  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+.hero{
+  display: flex;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*выравнивает вдоль, так как задали флекс дирекшн */
+}
+.hero-title{
+  color: $color-light-xl;
+  font-size: 2.75rem;
+  font-family: Georgia;
+  line-height: 130%;
+  max-width: 19.375rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.hero-subtitle{
+  color: $color-dark-s;
+  line-height: 160%;
+  margin-top: 2.625rem;
+  font-family: Arial;
+  font-size: 0.94rem;
+  width: 28.75rem;
+}
+.hero-button{
+  width: 207px;
+  border-radius: 100px;
+  margin-top: 42px;
+  padding: 15px 45px;
+  border: none;
+  background-color: $color-primary-color;
+}
+/*# sourceMappingURL=styles.css.map*/
+
+
+/*переперевести ремы с привязкой к 10 px*/
