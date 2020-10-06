@@ -118,13 +118,29 @@ function operation(oper) {
 
     if (memoryPendingOperation === '=') {
       previousOperand.innerText = '';
+      
+    if (memoryCurrentNumber === Infinity){
+         
       currentOperand.innerText = memoryCurrentNumber;
+      setTimeout(() => {
+        currentOperand.innerText = 0;
+      }, 500);
+    }
+     
+    else currentOperand.innerText = memoryCurrentNumber; 
     }
     
     else if(memoryPendingOperation === 'sqrt'){
       memoryCurrentNumber = Math.sqrt(parseFloat(memoryCurrentNumber));
-      currentOperand.innerText = memoryCurrentNumber;
       previousOperand.innerText = '';
+      if (isNaN(memoryCurrentNumber)){
+        
+        currentOperand.innerText = memoryCurrentNumber;
+        setTimeout(() => {
+          currentOperand.innerText = 0;
+        }, 500);
+      }
+      else currentOperand.innerText = memoryCurrentNumber;
       operationFlag = false;
     }
   } 
@@ -144,9 +160,7 @@ function decimal() {
 }
 
 function minus() {
-  console.log("It works")
   var localMemory = currentOperand.innerText;
-  console.log(`operationFlag ${operationFlag} localMemory ${localMemory}`)
   if (localMemory === '' || localMemory === '0') {
     currentOperand.innerText = '-';
     operationFlag = false;
@@ -164,4 +178,8 @@ function clear() {
 function clearAll(){
   currentOperand.innerText = '0';
   previousOperand.innerText = '';
+}
+
+function sayError(){
+
 }
