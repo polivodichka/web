@@ -45,8 +45,6 @@ function appendNumber(btnContent) {
 function operation(oper) {
   let localLen = 0;
   var localMemory = currentOperand.innerText;
-  console.log(`на входе localLen = ${localLen}\nlocalMemory = ${localMemory}\ncurrentOperand.innerText = ${currentOperand.innerText}\noperation = ${oper}\nmemoryPendingOperation = ${memoryPendingOperation}`);
-
   
   if (operationFlag && memoryPendingOperation !== '=') {
     currentOperand.innerText = memoryCurrentNumber;
@@ -88,10 +86,12 @@ function operation(oper) {
           localLen = (memoryCurrentNumber.split('.')[1]).length;
         }
       }
-      memoryCurrentNumber = ((parseFloat(memoryCurrentNumber)*Math.pow(10, localLen)) / (parseFloat(localMemory)*Math.pow(10, localLen)))/Math.pow(10, localLen);
+      memoryCurrentNumber = parseFloat(memoryCurrentNumber)*Math.pow(10, localLen) / parseFloat(localMemory)*Math.pow(10, localLen);
     }
     
     else if (memoryPendingOperation === '×'){
+
+  
       if (localMemory.indexOf('.') === 1 && memoryCurrentNumber.indexOf('.') === 1){
         if ((localMemory.split('.')[1]).length > (memoryCurrentNumber.split('.')[1]).length){
           localLen = (localMemory.split('.')[1]).length;
@@ -100,7 +100,9 @@ function operation(oper) {
           localLen = (memoryCurrentNumber.split('.')[1]).length;
         }
       }
-      memoryCurrentNumber = ((parseFloat(memoryCurrentNumber)*Math.pow(10, localLen)) * (parseFloat(localMemory)*Math.pow(10, localLen)))/Math.pow(10, localLen);
+      
+      console.log(`Считаем итог ((${parseFloat(memoryCurrentNumber)} * ${Math.pow(10, localLen)}) * (${parseFloat(localMemory)} * ${Math.pow(10, localLen)}))/${Math.pow(10, localLen)}`);
+      memoryCurrentNumber = parseFloat(memoryCurrentNumber) * parseFloat(localMemory);
     }
     
     else if(memoryPendingOperation === 'pow'){
