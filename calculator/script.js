@@ -1,6 +1,7 @@
 var numbers = document.querySelectorAll('.number'),
     operations = document.querySelectorAll('.operation'),
     decimalBtn = document.getElementById('decimal'),
+    minusBtn = document.getElementById('minus'),
     del = document.getElementById('delete'),
     clear_all = document.getElementById('all-clear'),
     display = document.getElementById('output'),
@@ -25,8 +26,7 @@ for (let i = 0; i < operations.length; i++) {
 decimalBtn.addEventListener('click', decimal);
 del.addEventListener('click', clear);
 clear_all.addEventListener('click', clearAll);
-
-
+minusBtn.addEventListener('click', minus);
 
 function appendNumber(btnContent) {
   if (operationFlag) {
@@ -45,13 +45,13 @@ function appendNumber(btnContent) {
 function operation(oper) {
   let localLen = 0;
   var localMemory = currentOperand.innerText;
-  console.log(`localLen = ${localLen}\nlocalMemory = ${localMemory}\ncurrentOperand.innerText = ${currentOperand.innerText}\noperation = ${oper}\nmemoryPendingOperation = ${memoryPendingOperation}`);
+  console.log(`на входе localLen = ${localLen}\nlocalMemory = ${localMemory}\ncurrentOperand.innerText = ${currentOperand.innerText}\noperation = ${oper}\nmemoryPendingOperation = ${memoryPendingOperation}`);
 
   
   if (operationFlag && memoryPendingOperation !== '=') {
     currentOperand.innerText = memoryCurrentNumber;
-  }  
-  
+  }   
+
   else{
     operationFlag = true;
     if (memoryPendingOperation === '+'){
@@ -67,6 +67,7 @@ function operation(oper) {
     } 
     
     else if(memoryPendingOperation === '-'){
+
       if (localMemory.indexOf('.') === 1 && memoryCurrentNumber.indexOf('.') === 1){
         if ((localMemory.split('.')[1]).length > (memoryCurrentNumber.split('.')[1]).length){
           localLen = (localMemory.split('.')[1]).length;
@@ -123,10 +124,12 @@ function operation(oper) {
       memoryCurrentNumber = Math.sqrt(parseFloat(memoryCurrentNumber));
       currentOperand.innerText = memoryCurrentNumber;
       previousOperand.innerText = '';
+      operationFlag = false;
     }
   } 
 }
-function decimal(params) {
+
+function decimal() {
   var localMemory = currentOperand.innerText;
   if (operationFlag) {
     localMemory = '0.';
@@ -138,9 +141,25 @@ function decimal(params) {
   }
   currentOperand.innerText = localMemory;
 }
+
+function minus() {
+  console.log("It works")
+  var localMemory = currentOperand.innerText;
+  console.log(`operationFlag ${operationFlag} localMemory ${localMemory}`)
+  if (localMemory === '' || localMemory === '0') {
+    currentOperand.innerText = '-';
+    operationFlag = false;
+  }  
+  else{
+    operation('-')
+  }
+}
+
 function clear() {
   currentOperand.innerText = currentOperand.innerText.substring(0, currentOperand.innerText.length - 1);
+  if (currentOperand.innerText.length === 0) currentOperand.innerText = '0';
 }
+
 function clearAll(){
   currentOperand.innerText = '0';
   previousOperand.innerText = '';
