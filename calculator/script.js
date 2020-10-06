@@ -124,7 +124,7 @@ function operation(oper) {
       currentOperand.innerText = memoryCurrentNumber;
       setTimeout(() => {
         currentOperand.innerText = 0;
-      }, 500);
+      }, 250);
     }
      
     else currentOperand.innerText = memoryCurrentNumber; 
@@ -138,7 +138,7 @@ function operation(oper) {
         currentOperand.innerText = memoryCurrentNumber;
         setTimeout(() => {
           currentOperand.innerText = 0;
-        }, 500);
+        }, 250);
       }
       else currentOperand.innerText = memoryCurrentNumber;
       operationFlag = false;
