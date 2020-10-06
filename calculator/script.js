@@ -86,9 +86,9 @@ function operation(oper) {
           localLen = (memoryCurrentNumber.split('.')[1]).length;
         }
       }
-      memoryCurrentNumber = parseFloat(memoryCurrentNumber)*Math.pow(10, localLen) / parseFloat(localMemory)*Math.pow(10, localLen);
-    }
-    
+       memoryCurrentNumber = parseFloat(memoryCurrentNumber) / parseFloat(localMemory);
+    } 
+
     else if (memoryPendingOperation === '×'){
 
   
@@ -101,8 +101,7 @@ function operation(oper) {
         }
       }
       
-      console.log(`Считаем итог ((${parseFloat(memoryCurrentNumber)} * ${Math.pow(10, localLen)}) * (${parseFloat(localMemory)} * ${Math.pow(10, localLen)}))/${Math.pow(10, localLen)}`);
-      memoryCurrentNumber = parseFloat(memoryCurrentNumber) * parseFloat(localMemory);
+      memoryCurrentNumber = ((parseFloat(memoryCurrentNumber)*Math.pow(10, localLen)) * (parseFloat(localMemory)*Math.pow(10, localLen)))/(Math.pow(10, localLen)*Math.pow(10, localLen));
     }
     
     else if(memoryPendingOperation === 'pow'){
