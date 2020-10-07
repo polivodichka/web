@@ -119,7 +119,7 @@ function operation(oper) {
     if (memoryPendingOperation === '=') {
       previousOperand.innerText = '';
       
-    if (memoryCurrentNumber === Infinity){
+    if (memoryCurrentNumber === Infinity || memoryCurrentNumber === -Infinity){
          
       currentOperand.innerText = memoryCurrentNumber;
       setTimeout(() => {
